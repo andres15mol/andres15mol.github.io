@@ -1,5 +1,7 @@
 # andres15mol.github.io
 
-Portafolio de Andrés Molina
+Portafolio de Andrés Molina 😉
 
-Enjoy :)
+Hecho con Html, Css , Javascript y Boostrap. 🌮
+
+Enjoy :) 
