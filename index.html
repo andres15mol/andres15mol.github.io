@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Molina Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/queries.css">
+    <link rel="stylesheet" href="./assets/css/carrusel-styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/Logo2.ico">
+    <link rel="stylesheet" href="/assets/css/background-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="main-nav container-fluid nav-s">
+            <div id="main-nav" class="row d-flex justify-content-between align-items-center">
+                
+                <div id="logo" onclick="home()"  class="col-9 col-lg-3 d-flex align-items-center justify-content-center logo">
+                    <img id="logo-nav" class="me-3 col-6" style="width: 75px;" src="/img/LogoAMpeq.png" alt="">
+                    <div id="name-nav" class="col-6 d-flex align-items-center justify-content-center "><b>ANDRÉS</b> MOLINA</div>
+                </div>
+    
+                <div class="col-6 d-flex align-items-center justify-content-center center-nav">
+                    <a class="main-nav-link me-4" href="#about-me" onclick="closef()">ABOUT ME</a>
+                    <a class="main-nav-link me-4" href="#services" onclick="closef()">SERVICES</a>
+                    <a class="main-nav-link me-4" href="#portfolio" onclick="closef()">WORKS</a>                    
+                    <a class="main-nav-link me-4" href="#contact" onclick="closef()">CONTACT</a>
+                </div>
+            
+                <div class="col-3 d-flex justify-content-center center-nav final-nav">
+                    <a href="https://github.com/andres15mol" class="iconos-apps"><i class="me-3 fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/andres15mol/" class="me-3 iconos-apps"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/andres15mol" class="iconos-apps"><i class="me-3 fa-brands fa-twitter "></i></a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-molina-039276230/" class="iconos-apps"><i class="me-3 fa-brands fa-linkedin"></i></a>
+                    
+                    <!-- <button class="iconos-apps btn-leng text-center">ES</button> -->
+                </div> 
+                <button class=" col-3 btn-mobile-nav" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div> 
+        </nav>
+    </header>
+
+<section class="container-fluid section-hero ">
+    <div class="row landing">
+        <div class="hero col-12 col-lg-12 d-flex flex-column align-items-center justify-content-center">
+            <div class="fullstack">
+                Full-Stack developer
+            </div>
+            <h1 class="text-center" id="yosoy">I'm Andrés</h1>
+            <p id="description" class="text-lg-start text-center">I design and code various software applications, websites, and other digital solutions. </p>
+            
+            <a href="#" class="contact-me "> CONTACT ME!</a>
+        </div>
+        
+    </div>
+</section>
+<ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!-- <div class="area" >
+    
+</div > -->
+
+<section class="about-me" id="about-me">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 col-lg-6 text-center d-flex flex-column  align-items-center">
+                    <h1 class="mt-5 mb-5 display-1">About me</h1>
+
+                    <div id="contenedor" onmousemove="moverImagen(event)" class="">
+                        <div id="fondo"></div>
+                        <div id="imagen"></div>
+                    </div>      
+
+                </div>
+                <div class="mt-5 col-12 col-lg-6 d-flex text-center align-items-center parra-about-me">
+                    <p class="parraf-english ">
+                    Hello! I'm Andrés Molina, a passionate software developer and a student of Systems Engineering at the Autonomous University of Honduras. With a fullstack expertise, my primary stack includes Vue.js, HTML, CSS, and JavaScript for the frontend, and Golang for backend development. <br> <br>
+
+                    As a self-taught developer, I have a deep fascination for programming, system design, and creating software solutions. I am equally enthusiastic about the art of user interaction and believe in crafting engaging platforms. I enjoy both learning and teaching, always striving to expand my knowledge. <br> <br>
+
+                    Being a proud Honduran, I embrace the vibrant technology community in my country. I strongly believe in the power of technology to drive progress and improve lives. I actively seek opportunities to contribute to the growth and development of my community and nation. <br> <br>
+
+                    <!-- In addition to my programming passion, I have a keen interest in the arts. I blend my technical skills with creativity to design intuitive and visually appealing user experiences. <br> <br> -->
+
+                    <!-- During my free time, I explore new technologies, participate in hackathons, and contribute to open-source projects. I also engage with technical literature and follow industry-related blogs and podcasts. <br> <br> -->
+
+                    I am excited to continue growing as a software developer and take on new challenges. If you have any inquiries or exciting projects, please feel free to reach out. Thank you for visiting my portfolio, and I look forward to potential collaborations! 
+                    </p>
+                    <p class="parraf-spanish d-none">
+                        ¡Hola! Soy Andrés Molina, un apasionado desarrollador de software y estudiante de Ingeniería en Sistemas en la Universidad Autónoma de Honduras. Como desarrollador fullstack, trabajo principalmente con Vue.js, HTML, CSS y JavaScript en el frontend, y Golang en el backend.
+
+                    Soy autodidacta y me fascina la programación, el diseño de sistemas y la creación de soluciones de software. Me encanta el arte y la interacción de los usuarios con las plataformas. También disfruto tanto aprender como enseñar.
+
+                    Como hondureño, me enorgullece formar parte de la vibrante comunidad tecnológica de mi país. Creo firmemente en el poder de la tecnología para impulsar el progreso y mejorar la vida de las personas. Siempre busco oportunidades para contribuir al crecimiento y desarrollo de mi comunidad y mi país.
+
+                    Además de mi pasión por la programación, me interesa el arte y combino mis habilidades técnicas con la creatividad para diseñar experiencias de usuario intuitivas y atractivas.
+
+                    En mi tiempo libre, explorar nuevas tecnologías, participar en hackathones y contribuir a proyectos de código abierto. También leo libros técnicos y sigo blogs y podcasts relacionados con la industria tecnológica.
+
+                    Estoy emocionado por seguir creciendo como desarrollador de software y enfrentar nuevos desafíos. Si tienes consultas o proyectos interesantes, no dudes en contactarme. ¡Gracias por visitar mi portafolio y espero tener la oportunidad de colaborar contigo en el futuro!   
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+</section>
+
+<section class="tecnologies">
+        <div class="container">
+            <div class="row d-flex justify-content-center flex-column align-items-center">
+
+                <h1 class="display-2 text-center mt-5">Technologies</h1>
+                <p class="text-center mt-5 mb-5">As a fullstack developer, I am proficient in Vue.js, HTML, CSS, JavaScript, and Golang. I also have experience with Git, Bootstrap, and MongoDB. I am continuously learning and staying updated on new technologies to deliver innovative software solutions.</p>
+                <div class="col-18 col-lg-9 text-center">
+                    <img src="/img/logos/vue.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/js.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/ts.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/postgres.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/Go.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/mongo.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/node.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/java.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/figma.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/css.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/HTML5.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/Odoo.svg" alt="" class="imgs-logos" style="height: auto;">
+                    <img src="/img/logos/bootstrap.svg" alt="" class="imgs-logos">
+                    <img src="/img/logos/photoshop.svg" alt="" class="imgs-logos">
+                </div>
+                
+            </div>
+            
+        </div>
+</section>
+
+<section id="services" class="pb-5 pt-3">
+    
+        <div class="container pb-5 ">
+            <div class="row d-flex justify-content-center flex-column align-items-center">
+
+                <h1 class="display-1 ms-0 mt-5 mb-3 ms-lg-5 mt-lg-5 mb-lg-2">Services</h1>
+                <p class="ms-0 mb-5 ms-lg-5 mb-lg-5">As a fullstack developer I offer my services here you can see more about it</p>
+                <!-- <div class="col-18 col-lg-9 text-center">
+                </div>
+                 -->
+            </div>
+            <!-- carrousel -->
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <!-- ---------------------------------------- -->
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-1.jpg);">
+                                    <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a href="#" class="service-name">Web Developer</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-2.jpg);">
+                                    <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a class="service-name" href="#">UI/UX & FRONTEND DEVELOPER</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-3.jpg);">
+                                    <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a class="service-name" href="#">Backend Developer</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-4.jpg);">
+                                    <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a class="service-name" href="#">Responsive Design</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-5.jpg);">
+                                    <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a class="service-name" href="#">ERP Services</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(img/services/work-6.jpg);">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class=" btn btn-primary icon d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h3><a class="service-name" href="#">FullStack Developer</a></h3>
+                                    <span class="service-name">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- //////////////////// -->
+                    
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+</section>
+
+<section id="portfolio" class="mb-5">
+    <h1 class="display-2 text-center mt-5 mb-3">Works</h1>
+
+    <div class="container">
+    
+    <div class="row d-flex justify-content-center">
+        
+        <div class="col-12 m-2 col-lg-3 box" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-image: url('/img/works/p1.jpg');">
+            <div class="text-box">
+                <p class="text-center">
+                    Saber Algo - Blog <br>
+                    Proyecto
+                </p>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Saber Algo / KnowSomething Blog </h1>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"><br>
+                    <div class="row">
+                        <div class="col-12 col-lg-3"></div>
+                        <div class="col-12 col-lg-6">
+                            <img src="/img/works/p1.jpg" alt="Saber Algo Blog" style="width: 100%;"> 
+                        </div>
+                        <div class="col-12 col-lg-3"></div>
+                    </div>
+                    <br>
+                    <h3>Interactive Blog - Developed with Golang, PostgreSQL, and Bootstrap</h3> 
+                    <p>This project showcases my web development skills, where I built an interactive blog from scratch using key
+                        technologies such as Golang in the backend, PostgreSQL as the database management system, and Bootstrap for the
+                        frontend.</p>
+                        <br>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Secure Authentication:</strong> I implemented a registration and authentication system based on
+                            sessions and cookies to ensure user security.</li>
+                        <li><strong>Article Management:</strong> Users have the ability to create, edit, and delete their own articles,
+                            with an intuitive user interface.</li>
+                        <li><strong>Interactive Comments:</strong> A comments system was incorporated to allow readers to interact and
+                            respond to existing comments.</li>
+                        <li><strong>Search and Filters:</strong> Users can search for articles by keywords and filter them by categories
+                            or tags.</li>
+                        <li><strong>Responsive Design:</strong> The platform adapts to different devices using Bootstrap, providing a
+                            consistent user experience.</li>
+                    </ul>
+                    <br>
+                    <p>This project has enabled me to strengthen my backend and frontend development skills, and I am excited about the
+                        future opportunities this interactive blog offers.</p>
+                        <br>
+                    <p><strong>Link to the Project:</strong> <a href="URL_TO_GIT_REPOSITORY">Interactive Blog - GitHub Repository</a></p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+            <!-- <div class="col-12 m-2 col-lg-3 box">
+                
+            </div>
+            <div class="col-12 m-2 col-lg-3 box">
+                
+            </div>
+            <div class="col-12 m-2 col-lg-3 box">
+                
+            </div> -->
+        
+            
+        </div>  
+    </div>
+    
+    </div>
+</section>
+
+<section id="contact" class="pb-5 pt-3 contact">
+    <div class="container contact">
+        <div class="row mt-4">
+            <div class="col-12 col-lg-8 col-sm-8 send-message">
+                <h1 class="pe-lg-5 mt-5">Send a Message</h1>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+                      <input type="submit" class="btn btn-dark mb-4" value="Submit">
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-4 contact-info">
+                <h3 class="text-center mb-5 mt-5">Contact Info</h3>
+                <div class="mb-5 d-flex align-items-center justify-content-center">
+                    <i class="pe-2 align-items-center justify-content-center fa-solid fa-envelope"></i>
+                    <p>amplix15@gmail.com</p>
+                </div>
+                
+                <div class=" d-flex justify-content-center mb-5">
+                    <a href="https://www.instagram.com/" class="me-3 iconos-apps"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="iconos-apps contact-ico"><i class="me-3 fa-brands fa-youtube "></i></a>
+                    <a href="" class="iconos-apps"><i class="me-3 fa-brands fa-github"></i></a>
+                    <a href="" class="iconos-apps"><i class="me-3 fa-brands fa-linkedin"></i></a>
+                
+                </div> 
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <footer>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 350" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 20, 60, 1)" offset="0%"></stop><stop stop-color="rgba(65.989, 65.989, 65.989, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,35L240,35L480,245L720,70L960,315L1200,315L1440,140L1680,315L1920,315L2160,280L2400,105L2640,175L2880,35L3120,35L3360,35L3600,0L3840,70L4080,315L4320,280L4560,280L4800,210L5040,35L5280,140L5520,210L5760,105L5760,350L5520,350L5280,350L5040,350L4800,350L4560,350L4320,350L4080,350L3840,350L3600,350L3360,350L3120,350L2880,350L2640,350L2400,350L2160,350L1920,350L1680,350L1440,350L1200,350L960,350L720,350L480,350L240,350L0,350Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 20, 60, 1)" offset="0%"></stop><stop stop-color="rgba(22.73, 22.73, 22.73, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,245L240,70L480,280L720,35L960,70L1200,35L1440,140L1680,280L1920,105L2160,70L2400,210L2640,245L2880,140L3120,315L3360,315L3600,140L3840,0L4080,245L4320,105L4560,175L4800,70L5040,315L5280,70L5520,210L5760,140L5760,350L5520,350L5280,350L5040,350L4800,350L4560,350L4320,350L4080,350L3840,350L3600,350L3360,350L3120,350L2880,350L2640,350L2400,350L2160,350L1920,350L1680,350L1440,350L1200,350L960,350L720,350L480,350L240,350L0,350Z"></path></svg>
+
+</footer>     -->
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>AM</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Address</h4>
+          <p>Tegucigalpa, Honduras</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Me</h4>
+          <ul class="list-inline">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 Andrés Molina. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b12789a7cf.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/controller.js"></script>
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
