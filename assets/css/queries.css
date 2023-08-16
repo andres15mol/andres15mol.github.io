@@ -36,6 +36,7 @@
   }
   .btn-mobile-nav:hover {
     display: block;
+    /* color: crimson; */
     color: crimson;
   }
 

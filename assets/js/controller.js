@@ -85,8 +85,28 @@ window.addEventListener('scroll', function() {
   
   if (window.pageYOffset >= sectionHero.offsetTop + sectionHero.offsetHeight) {
     navbar.classList.add('fixed-navbar');
+
+    let btnMobileNav = document.getElementById('btnMobileNav');
+
+
+    btnMobileNav.addEventListener('mouseover', function() {
+      this.style.color = 'rgb(253, 181, 181)'; // Cambiar el color del texto a negro
+      // Agregar un manejador de eventos para el evento "mouseout" (cursor fuera)
+    btnMobileNav.addEventListener('mouseout', function() {
+      this.style.color = ''; // Restaurar el color del texto a su estado original
+    });
+  });
   } else {
     navbar.classList.remove('fixed-navbar');
+    
+
+    btnMobileNav.addEventListener('mouseover', function() {
+      this.style.color = 'crimson'; // Cambiar el color del texto a negro
+      // Agregar un manejador de eventos para el evento "mouseout" (cursor fuera)
+    btnMobileNav.addEventListener('mouseout', function() {
+      this.style.color = ''; // Restaurar el color del texto a su estado original
+    });
+  });
   }
 });
 
