@@ -12,20 +12,6 @@ function moverImagen(event) {
     imagen.style.transform = 'translate(' + imagenX + 'px, ' + imagenY + 'px)';
   }
 
-  // Wrap every letter in a span
-// var textWrapper = document.querySelector('.ml2');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: false})
-//   .add({
-//     targets: '.ml2 .letter',
-//     scale: [4,1],
-//     opacity: [0,1],
-//     translateZ: 0,
-//     easing: "easeOutExpo",
-//     duration: 950,
-//     delay: (el, i) => 70*i
-//   })
 
 let mainNav = document.querySelector('.main-nav');
 let centerNav = document.querySelector('.center-nav');
@@ -38,6 +24,8 @@ ${finalNav.innerHTML}
 </div>  
  
 </div>`
+
+
 
 //RESIZE FUNCTION
 
@@ -174,6 +162,47 @@ function closef(){
             this.openNav();
         }
         
-        
-        
 }
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+//Send Email
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_jnz0vha';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

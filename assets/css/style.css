@@ -464,3 +464,10 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.circles{
+    position: absolute; /* Cambiar a "relative" si es necesario */
+  bottom: 0; /* Alinear al fondo */
+  left: 0; /* Alinear a la izquierda */
+  z-index: -1; /* Enviar al fondo */
+}
