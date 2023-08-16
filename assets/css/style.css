@@ -145,6 +145,11 @@ body{
     cursor: pointer;
 }
 
+#name-nav{
+    color: inherit;
+    text-decoration: none;
+}
+
 #name-nav:hover{
     color: rgb(235, 88, 118);
 }
